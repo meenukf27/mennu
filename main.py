@@ -3,6 +3,7 @@ import plotly.express as px
 import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output
+import os
 
 # Load the dataset
 # df = pd.read_csv('weatherHistory.csv')  # Update this line to load your dataset
