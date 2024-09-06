@@ -10,7 +10,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Path to the CSV file
-csv_file_path = os.path.join(BASE_DIR, 'data', 'weatherHistory.csv')
+csv_file_path = os.path.join(BASE_DIR,'weatherHistory.csv')
 df = pd.read_csv(csv_file_path)  
 # Convert 'Formatted Date' to datetime, handling timezone information
 df['Formatted Date'] = pd.to_datetime(df['Formatted Date'], utc=True)  # Set utc=True to handle timezone-aware datetimes
